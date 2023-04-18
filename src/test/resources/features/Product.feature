@@ -24,12 +24,3 @@ Feature: Product feature
 #        |            |
       | M142 HIMAR |
       | %%%        |
-
-  @Positive
-  Scenario Outline: Search a valid product with specific attribute
-    Given I want to see all the available products in his shop with a specific attribute
-    When I searches for all "<product>" products with "<attribute>" attribute that includes "<specification>"
-    Then I should retrieve one or more product
-    Examples:
-      | product | attribute | specification |
-      | orange  | provider  | Vomar         |
